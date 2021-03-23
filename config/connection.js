@@ -6,9 +6,9 @@ const Sequelize = require('sequelize');
 
 
 //------ Establishing a DB connection ------ //
-module.exports = new Sequelize('test', 'admin', 'helloracle#db', {
-        host: 'database-01.cv2uua0r65md.us-east-2.rds.amazonaws.com',
-        dialect: 'mysql',
+module.exports = new Sequelize('--your DB Name-- ', 'DB username', 'DB Password', {
+        host: '--Your Host Name--',
+        dialect: '', //chooes yours mine is mysql
         operatorAliases: false,
         pool: {
             max: 5,
